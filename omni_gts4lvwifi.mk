@@ -1,4 +1,3 @@
-#
 # Copyright 2016 The Android Open Source Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
@@ -14,7 +13,9 @@
 # limitations under the License.
 #
 
-# Release name
+# ----------------------------
+# Release name and product
+# ----------------------------
 PRODUCT_RELEASE_NAME := gts4lvwifi
 
 $(call inherit-product, build/target/product/embedded.mk)
@@ -26,9 +27,27 @@ $(call inherit-product, vendor/omni/config/common.mk)
 PRODUCT_COPY_FILES += \
     system/timezone/output_data/iana/tzdata:recovery/root/system/usr/share/zoneinfo/tzdata
 
-## Device identifier. This must come after all inclusions
+# ----------------------------
+# Device identifiers
+# ----------------------------
 PRODUCT_DEVICE := gts4lvwifi
 PRODUCT_NAME := omni_gts4lvwifi
 PRODUCT_BRAND := Samsung
 PRODUCT_MODEL := SM-T720
 PRODUCT_MANUFACTURER := Samsung
+
+# ----------------------------
+# Build property overrides
+# ----------------------------
+PRODUCT_BUILD_PROP_OVERRIDES += \
+    BUILD_FINGERPRINT= \
+    PRIVATE_BUILD_DESC= \
+    TARGET_DEVICE=$(PRODUCT_DEVICE) \
+    PRODUCT_NAME=$(PRODUCT_NAME)
+
+# Default property overrides
+PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
+
+# Vendor/target identifiers
+TARGET_VENDOR_PRODUCT_NAME := $(PRODUCT_NAME)
+TARGET_VENDOR_DEVICE_NAME := $(PRODUCT_DEVICE)
