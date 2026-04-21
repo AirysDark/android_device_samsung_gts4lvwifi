@@ -1,22 +1,11 @@
-# omni.dependencies for Samsung Galaxy Tab S5e Wi‑Fi (gts4lvwifi)
-# Updated for Android 11 (R / API 30)
-
-# Vendor common device tree (blobs, shared configs)
-vendor/samsung/common-R          # Updated common for Android 11
-
-# Hardware abstraction layers / frameworks
-hardware/qcom/audio              # Audio HAL (HIDL + AIDL support)
-hardware/qcom/camera             # Camera HAL (v2.7+)
-hardware/qcom/display            # Display HAL (HIDL v1.0 + VNDK compatible)
-
-# Kernel dependencies
-kernel/samsung/gts4lvwifi        # Ensure 4.14+ or 4.19 kernel
-
-# Optional modules
-vendor/samsung/wifi              # Updated Wi-Fi firmware/blobs
-vendor/samsung/bluetooth         # Bluetooth HAL v1.0 / AIDL updated
-vendor/samsung/sensors           # Sensor HAL updates (A11 compatible)
-
-# Recovery and bootloader blobs
-vendor/samsung/recovery          # Updated recovery.img for Android 11
-vendor/samsung/bootloader        # Bootloader blobs for R
+# Auto-generated omni.dependencies
+vendor/Samsung/common-R
+hardware/qcom/audio
+hardware/qcom/camera
+hardware/qcom/display
+kernel/Samsung/T720
+vendor/Samsung/wifi
+vendor/Samsung/bluetooth
+vendor/Samsung/sensors
+vendor/Samsung/recovery
+vendor/Samsung/bootloader

@@ -1,7 +1,7 @@
 # Target device
-PRODUCT_DEVICE := gts4lvwifi
-PRODUCT_BRAND := samsung
-PRODUCT_MODEL := SM-T235
+PRODUCT_DEVICE := T720
+PRODUCT_BRAND := Samsung
+PRODUCT_MODEL := T720
 
 # Packages
 PRODUCT_PACKAGES += \
@@ -9,8 +9,4 @@ PRODUCT_PACKAGES += \
     android.hardware.audio@4.0-impl \
     android.hardware.biometrics.fingerprint@2.1-service \
     android.hardware.camera.provider@2.7-impl \
-    com.android.adservices \
-    ...
-
-# Remove unsupported Pie-only packages
-# PRODUCT_PACKAGES -= legacy_camera HAL_xxx
+    com.android.adservices
