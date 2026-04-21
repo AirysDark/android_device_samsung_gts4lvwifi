@@ -1,0 +1,3 @@
+Board: T720
+Brand: Samsung
+Model: T720

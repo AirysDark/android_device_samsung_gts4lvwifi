@@ -1,21 +1,11 @@
-# omni.dependencies for Samsung Galaxy Tab S5e Wi?Fi (gts4lvwifi)
-
-# Vendor common device tree (blobs, shared configs)
-vendor/samsung/common
-
-# Hardware abstraction layers / common frameworks (if any)
+# Auto-generated omni.dependencies
+vendor/Samsung/common-R
 hardware/qcom/audio
 hardware/qcom/camera
 hardware/qcom/display
-
-# Kernel dependencies (if separate repo)
-kernel/samsung/gts4lvwifi
-
-# Optional: Wi-Fi / Bluetooth / sensors
-vendor/samsung/wifi
-vendor/samsung/bluetooth
-vendor/samsung/sensors
-
-# Shared recovery and bootloader blobs
-vendor/samsung/recovery
-vendor/samsung/bootloader
+kernel/Samsung/T720
+vendor/Samsung/wifi
+vendor/Samsung/bluetooth
+vendor/Samsung/sensors
+vendor/Samsung/recovery
+vendor/Samsung/bootloader
